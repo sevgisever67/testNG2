@@ -13,7 +13,7 @@ public class C01_RaporluAmazonSearch extends TestBaseRapor {
     @Test
     public void test01(){
         extentTest= extentReports.createTest("Amazon arama testi",
-                "Kullanici istedigi kelimeyi aratabilmeli");
+               "Kullanici istedigi kelimeyi aratabilmeli");
 
         // amazon'a gidin
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
@@ -22,7 +22,7 @@ public class C01_RaporluAmazonSearch extends TestBaseRapor {
         // Nutella icin arama yapin
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.aramaKutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime")+ Keys.ENTER);
-        extentTest.("Arama kutusuna belirlenen aranacak kelimeyi yazar ve aratir");
+        extentTest.info("Arama kutusuna belirlenen aranacak kelimeyi yazar ve aratir");
         // arama sonuclarinin Nutella icerdigini test edin
 
         String actualSonucYazisi= amazonPage.aramaSonucuElementi.getText();
