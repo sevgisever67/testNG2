@@ -13,6 +13,7 @@ public class C02_AlertsTesti extends TestBaseCross {
     @Test
     public void test01() throws InterruptedException {
 
+
         // 1. Test
         //            -  https://the-internet.herokuapp.com/javascript_alerts adresine gidin
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
